@@ -105,7 +105,7 @@ export type QTreeNode<TExtra = unknown> = Omit<
     handler?: (node: QTreeNode<TExtra>) => void;
     tickable?: boolean;
     noTick?: boolean;
-    tickStrategy?: "leaf" | "leaf-filtered" | "string" | "none";
+    tickStrategy?: "leaf" | "leaf-filtered" | "strict" | "none";
     lazy?: boolean;
     header?: string;
     body?: string;
